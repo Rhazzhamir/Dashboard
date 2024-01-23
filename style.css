@@ -1,0 +1,218 @@
+    :root {
+        --navigation_logo_margin_top: 35px;
+        --navigation_logo_margin_left: 55px;
+        --navigation_text_margin_top: 11px;
+        --header_background: #f1f5f9;
+        --sidebar_background: #334155;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .sidebar img {
+        height: 40px;
+        width: 40px;
+        filter: brightness(0) invert(1);
+    }
+
+    /** Sidebar **/
+    .sidebar {
+        grid-column: 1 / 4;
+        grid-row: 1 / 7;
+        background-color: var(--sidebar_background);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .sidebar .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .logo > img {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .logo > h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .home,
+    .container .profile,
+    .container .message,
+    .container .history,
+    .container .task,
+    .container .communities,
+    .container .settings {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .container .home:hover,
+    .container .profile:hover,
+    .container .message:hover,
+    .container .history:hover,
+    .container .task:hover,
+    .container .communities:hover,
+    .container .settings:hover {
+        background-color: #294261;
+    }
+
+    .container .home img,
+    .container .profile img,
+    .container .message img,
+    .container .history img,
+    .container .task img,
+    .container .communities img,
+    .container .settings img {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+    }
+
+    .container .home h2,
+    .container .profile h2,
+    .container .message h2,
+    .container .history h2,
+    .container .task h2,
+    .container .communities h2,
+    .container .settings h2 {
+        margin-top: var(--navigation_text_margin_top);
+    }
+
+
+
+
+
+
+
+    /**Header**/
+    .header{
+        grid-column:  4 / 13 ;
+        grid-row: 1 / 2;
+        background-color: var(--header_background);
+        padding: 20px auto;
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .search_bar{
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+    .search_bar img{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: 11px;
+    }
+
+    input[type="search"] {
+        border: 1px solid #ccc;  
+        border-radius: 10px;     
+        padding: 5px;  
+        width: 500px;         
+        background-color: #cbd5e1;
+    }
+    .profile_picture #noti{
+        height: 30px;
+        width: 30px;
+        margin: 20px 50px;
+        }
+    .profile_picture{
+        display: flex;
+    }
+
+    .name #output_Image {
+        border-radius: 50px;
+        outline: 2px solid white;
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .name img{
+        margin-top: 25px;
+        height: 55px;
+        width: 55px;
+        border-radius: 50px;
+    }
+    .name h3 {
+        margin-top: 42px ;
+        margin-left: 15px;
+    }
+
+    .name {
+        display: flex;
+    }
+
+    .profile-introduction-container{
+        display: flex;
+    }
+    .intro{
+        display: flex;
+        margin-top: 10px;
+    }
+    .intro h3{
+        margin-top: 25px;
+    }
+    .intro img{
+        height: 70px;
+        width: 70px;
+    }
+
+    .btn{
+        position: relative;
+        top: 50px;
+        left: 390px;
+    }
+    .btn button{
+        margin-right: 5px;
+        border-radius: 15px;
+        padding: 5px;
+        background-color:  #a5f3fc;
+    }
+
+
+    .main{
+        grid-column: 4/ 13;
+        grid-row: 2 / 7 ;
+        background-color: #e2e8f0;
+    }
+
+    .main .container-1  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px; /* Adjust the gap between grid items as needed */
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .main .container-1 > div {
+        background-color: white; 
+        padding: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        word-wrap: break-word; 
+    }
+
+    .main h2{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
